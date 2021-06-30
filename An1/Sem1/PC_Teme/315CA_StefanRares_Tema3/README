@@ -1,0 +1,31 @@
+Stefan Rares Constantin - 315CA
+
+In main citesc instructiuni pana la citirea lui EXIT si folosesc stringul
+"nexter" ca sa determin ce urmeaza sa fac. Daca nexter contine doar
+terminatorul de sir, stiu ca se incheie executia programului, daca nexter
+contine "vreau sa intru in examen" inseamna ca ori nu s-a dat LOAD inca, ori
+s-a dat LOAD, dar acesta a esuat si citesc o noua instructiune.
+
+Se incearca load si daca se poate deschide fisierul cu numele introdus, se
+determina tipul acestuia: gri sau color si se intra in functia corespunzatoare
+dupa caz.
+
+Codul meu contine functii asemanatoare, scrise o data pentru matrice int (gri)
+sau matrice struct pixel (color) si se apeleaza dupa caz. In load_p12 si
+load_p3 se citeste headerul imaginii si se incarca in memorie imaginea, tinuta
+sub forma unei matrice. In continuare citesc instructiuni ce vor fi executate
+pana la intalnirea lui EXIT care ma scoate din functie si il face pe nexter
+'\n' ca sa se poate opri programul, sau pana la intalnirea lui LOAD care ii
+atribuie lui nexter numele fisierului din comanda "LOAD numefiser.extensie".
+
+Fiecare operatie de rotire are cate un output diferit asa ca am facut cate o
+functie pentru fiecare rotatie posibila, si le-am centralizat intr-o functie
+numita rotate (respectiv rotate_pixel) care decide ce rotatie trebuie efectuata
+in functie de unghiul oferit. rotate_whole roteste intreaga imagine creand o
+matrice noua care va reprezenta noua imagine, elibereaza memoria celei vechi si
+o intoarce pe cea noua, inlocuind-o complet pe cea veche. Acest principiu este
+folosit si la functia de crop.
+
+Functiile de save constau in crearea de noi fisiere cu numele introduse si
+scrierea headerului si a matricii imaginii in acestea, in binary sau in ascii,
+dupa caz

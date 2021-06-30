@@ -1,0 +1,26 @@
+Problema ninel:
+	Am inceput cu functii care calculeaza minimul si maximul a doua numere intregi si o functie care atribuie tuturor parametrilor ceruti valoarea 0
+	Verific cazurile speciale in care N<3 si afisez ce trebuie
+	Daca N>3, dupa ce am citit inaltimile primilor 3 copaci, il verific la fiecare pas pe cel din mijloc, iar daca este special, modific parametrii ceruti in functie de acesta. Dupa verificare, citesc inaltimea urmatorului copac si le modific pe cele precedente.
+	Daca am copaci speciali, afisez valorile calculate, dar daca nu, inseamna ca toti parametrii ceruti sunt 0.
+
+
+
+Problema vectsecv:
+	Am scris o functie care imi calculeaza diferenta dintre numarul format din cifrele numarului n in ordine crescatoare si cel format din cifrele descrescatoare.
+	Retin intr-un vector vnr_intalnite toate diferentele obtinute, pana cand ajung sa se repete, astfel ca la un moment dat voi avea doua valori egale in vector
+	Afisez toate elementele din vector aflate intre valorile care se repeta
+
+
+
+Problema codeinvim:
+	Retin intr-un vector notele si creditele aferente materiei la care s-a luat nota, astfel ca daca pe pozitia i am nota unei materii, pe pozitia i+N voi avea numarul de credite aferente materiei.
+	Calculez suma de credite si o compar cu minimul ales. Daca suma e mai mica decat minimul, incep sa calculez toate diferentele posibile si le retin intr-un vector.
+	Il sortez crescator si incep sa adaug cate un element de la coada (cel mai mare) la suma de credite, pana cand suma devine mai mare decat minimul ales.
+
+
+
+Problema nomogram:
+	Am scris o functie care calculeaza sumele numerelor dupa care ne ghidam pentru completarea matricei si le retin intr-un vector si o functie care calculeaza suma elementelor de pe fiecare linie si coloana ale matricei si le retine intr-un vector
+	Daca cei doi vectori sunt egali, inseamna ca matricea e completata corect, iar daca difera, inseamna ca este gresita matricea si se afiseaza "Eroare"
+	In final transform fiecare element din matrice si din vectorul sau in 0, pentru ca verificarea urmatoarei matrice sa poate fi facuta corect.

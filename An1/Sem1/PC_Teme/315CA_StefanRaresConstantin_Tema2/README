@@ -1,0 +1,36 @@
+Stefan Rares Constantin - 315CA
+
+	Am modularizat astfel incat in main sa nu am decat declaratii de variabile
+si apelari de functii.
+	Am creat o functie care aloca memorie pentru o matrice cu elemente intregi
+si una care aloca memorie pentru o matrice cu elemente char, cu de 4 ori mai
+multe elemente pe linie, care va fi construita pe baza celei de tip int.
+	Am separat fiecare numar int in 4 numere char folosind formula
+(nr >> 8 * x) & 0xff, x = {0, 1, 2, 3}, unde nr este numarul pe care vreau
+sa-l sparg in 4 bytes si x este al catelea byte (luat de la coada catre
+inceput) vreau sa scot.
+	
+	TASK 1:
+	In functia shield am parcurs "conturul" hartii char si am calculat media
+aritmetica a elementelor acestuia.
+
+	TASK 2:
+	Am creat cate o functie pentru fiecare modificare ce poate fi efectuata,
+dupa tipul de date cu care lucreaza ==> 8 functii.
+	In functia task2 citesc lista de k operatii de efectuat asupra matricii si
+le efectuez dupa caz, iar apoi afisez matricea rezultata.
+
+	TASK 3:
+	Am creat o functie recursiva (bhole_size) care imi calculeaza dimensiunea
+unei gauri negre. Aceasta verifica daca elementul aflat la pozitiile date ca 
+parametri este 0. Daca nu este, returneaza 0 pentru ca nu ma intereseaza decat 
+0-urile, iar daca este 0, verifica in toate cele 4 directii daca vecinii
+sai sunt 0, iar daca sunt 0, face acelasi lucru. De asemenea modifica 0-urile
+prin care trece in -1, pentru a asigura ca nu ia acelasi 0 de doua ori.
+	Am creat un tip de structura numit bhole care sa retina atributele
+importante ale unei gauri negre si folosesc un element de tip bhole in functia
+task3, unde verific pentru fiecare element al matricii daca este 0,
+iar daca este, verific daca gaura neagra de care apartine este sau nu mai mare
+decat cea mai mare gaura neagra gasita cunoscuta pana la acel moment
+	In final afisez datele gaurii negre cea mai supermasiva.
+
