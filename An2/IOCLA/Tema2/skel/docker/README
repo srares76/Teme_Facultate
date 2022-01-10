@@ -1,0 +1,18 @@
+Stefan Rares - Constantin 325CA
+
+1) ROTP
+Decrypts a message using the input string and the key, building the
+output string
+
+2) AGES
+Finds the age of multiple people knowing the current date and their birthdays,
+stored in an array of structs.
+Subtract the birthday date from the current date and, if necessary, subtract 1
+after (if the current month is lesser than the birthday, or if the month are
+equal and the current day is lesser than the birthday day).
+Output 0 if the birthday is in the future
+
+3)
+COLUMNAR
+Traverse the matrix column by column instead of row by row and place each char
+in the output string

@@ -1,0 +1,45 @@
+Basic file navigation bash commands using C.
+
+TOUCH:
+Creates a new file with the given name (if it doesn's already exist) and adds
+it to the end of the list of children files of the current directory.
+
+MKDIR:
+Same as with TOUCH, only it creates a new directory
+
+LS:
+Prints out the names of all children directories and all children files of the
+current directory, in this order - dir's first, files after
+
+RM:
+Tries to find the file in the current directory's children files list and if it
+is found, it gets removed from the list and it's memory is freed, erasing it completely
+
+FREE_MEM:
+Since RMDIR has a recursive character (it needs to delete) both the dir itself
+and all of it's contents, FREE_MEM was created to implement the recursion part.
+That is, it's purpose is to empty the contents of the current directory.
+
+RM:
+Removes the specified directory, if it is found
+
+PWD:
+Prints out the absolute path to the current directory. It creates a string to
+which is concatenated at the beginning the name of the directory at each level,
+until root is found.
+
+STOP:
+Stops the execution of the whole program by changing the name of the root directory
+to "stop", which in turn breaks the do while loop in the main funciton 
+
+TREE:
+Prints out the names of all descendant files' and directories' names, with the correct
+amount of indentation to simulate the "tree" command of bash. The function is recursive
+and for each level of depth, another 4 blank spaces are printed out before the names of
+the content pieces, thus creating the desired effect.
+
+MV:
+"Renames" a file or directory by changing it's actual name to the desired one and placing
+it at the end of the files/directories list. It first has to make sure the given names (old name
+and new name) are correct, that is if the old one exists and if the new one is not taken and does
+the operation.
